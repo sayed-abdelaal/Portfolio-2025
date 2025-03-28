@@ -292,6 +292,18 @@ div.form-input-group {
 
 /* ///////////////////////////[        Navbar        ]////////////////////////////////////// */
 
+#tab-scroll {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  transition: top 0.3s;
+  z-index: 1020;
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  background: rgba(10,15,41,0.21);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
 #navbar-scroll {
   /*position: fixed;*/
   top: 0;
@@ -559,9 +571,22 @@ div.form-input-group {
   transition: all .3s ease;
 }
 
+.bg-00 {
+  border-radius: 24px;
+  padding: .75rem;
+  /*border: 1px solid rgba(255,255,255,0.22);*/
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  height: fit-content;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  overflow: hidden;
+  background: rgba(255,255,255,0.05);
+}
+
 .card-00 {
   border-radius: 24px;
-  /*padding: 1.5rem;*/
+  padding: 1rem;
   border: 1px solid rgba(255,255,255,0.22);
   background: linear-gradient(-150deg, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.00) 100%), linear-gradient(-150deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.00) 74%);
   backdrop-filter: blur(2px);
@@ -575,6 +600,14 @@ div.form-input-group {
 .card-0:hover {
   border-radius: 24px;
   border: 1px solid rgba(255,255,255,0.2);
+  background: linear-gradient(-150deg, rgba(85,8,208,0.33) 0%, rgba(19, 14, 220, 0.00) 87%), linear-gradient(-150deg, rgba(142,14,220,0.33) 0%, rgba(19, 14, 220, 0.00) 71%);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.bg-00:hover {
+  border-radius: 24px;
+  /*border: 1px solid rgba(255,255,255,0.2);*/
   background: linear-gradient(-150deg, rgba(85,8,208,0.33) 0%, rgba(19, 14, 220, 0.00) 87%), linear-gradient(-150deg, rgba(142,14,220,0.33) 0%, rgba(19, 14, 220, 0.00) 71%);
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
@@ -1086,5 +1119,38 @@ div.column-counter {
 
 .pink-bg-1 {
   background: linear-gradient(45deg, #ed0c93 0%, #ed8ec7);
+}
+
+.nav-underline .nav-link.active, .nav-underline .show > .nav-link {
+  font-weight: 700;
+  color: #e30485;
+  border-bottom-color: currentcolor;
+}
+
+small.badge-1 {
+  color: #11e8f6;
+  border-width: 1px;
+  border-style: solid;
+  background: #11e8f60b;
+  padding-top: 0.15rem;
+  padding-bottom: 0.15rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  border-radius: 50rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: auto;
+  font-size: 0.75rem;
+}
+
+.grid-wrapper {
+  display: inline-grid;
+  grid-template: 1fr / 1fr 1fr 1fr;
+  gap: 0px;
+}
+
+.wrapper-in {
+  display: inline-flex;
+  flex-direction: row;
 }
 
