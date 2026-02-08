@@ -268,7 +268,7 @@ div.form-input-group {
 @media (min-width: 991px) {
   .nav-item {
     position: relative;
-    margin-right: 5px;
+    /*margin-right: 5px;*/
     margin-left: 5px;
   }
 }
